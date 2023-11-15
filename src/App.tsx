@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import HeaderBar from './components/headerBar'
+import Rutas from './routes/rutes'
 import "./normalize.css"
 import './App.css'
+
 
 function App() {
 
   return (
-    <> 
-    <h1> Test 1</h1>
+    <>
+      <HeaderBar />
+      <Rutas/>
     </>
   )
 }

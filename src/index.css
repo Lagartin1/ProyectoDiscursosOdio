@@ -2,9 +2,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Playpen Sans', cursive;
+  top: 0;
+  left: 0;
+  font-family: 'Oswald','sans-serif';
 }
 hmtl{
   box-sizing: inherit;
   font-size: 65.5%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #4A5759;
 }
