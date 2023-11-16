@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Home.css"
-import { Stack,Radio, RadioGroup ,Input,Img,Box} from '@chakra-ui/react'
+import { Stack, Radio, RadioGroup, Input, Img,Box} from '@chakra-ui/react'
 
 function Home() {
     const [value, setValue] = React.useState('');
     const [urlSend,setUrlSend] = React.useState('');
     const handelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUrlSend(event.target.value);
-      };
-      const handelClickS=() =>{
+    };
+    const handelClickS=() =>{
         if ((value === null || value === '') && (urlSend === null || urlSend === '')){
             null
         }
@@ -28,7 +28,7 @@ function Home() {
                     </RadioGroup>
                 </div>
                 <div className='inputField'>
-                    <Input className='inputBox'value={urlSend} focusBorderColor={'#fff'} color={'#4A5759'} _hover={{borderColor:'none'}} borderWidth={'1px' } borderColor='#4A5759' onChange={handelChange} marginTop='2rem' size='md' width='40rem' variant='outline' placeholder='Url' />
+                    <Input className='inputBox'value={urlSend} focusBorderColor={'#fff'} color={'#4A5759'} _hover={{borderColor:'none'}} borderWidth={'1px' } borderColor='#4A5759' onChange={handelChange} marginTop='2rem' size='md' width='40rem' variant='outline' placeholder='URL' />
                     <button className='sendB'onClick={handelClickS}> Send</button>
                 </div>
             </div>
