@@ -1,0 +1,59 @@
+.inputCard{
+    display: flex;
+    margin-top: 10vh ;
+    margin-left:20vw ;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    height: 20vh;
+    background: #B0C4B1;
+    border-radius: 0.8rem;
+}
+.stackWrapper{
+    margin-right: 8rem;
+    display: flex;
+    flex-direction:row;
+    margin-top: 2rem;
+    text-wrap: 1rem;
+}
+.sendB{
+    margin-left: 2vw;
+    border: 1px solid #fff;
+    background-color: transparent;
+    box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px 10px 20px;
+    border-radius: 0.9rem;
+
+}
+.sendB:hover{
+    background-color: #DEDBD2;
+    transition: 0.25s ease-in-out;
+}
+
+
+.inputField .inputBox{
+    box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.aboutApp{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.explanation{
+    margin-top: 2vh;
+    margin-left: 10vw;
+    height: 100%;
+    width: 40%;
+    color:#fff;
+    margin-bottom: 5vh;
+}
+.explanation p {
+    text-align: justify;
+    text-justify: auto;
+}
