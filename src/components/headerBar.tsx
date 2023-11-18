@@ -1,9 +1,9 @@
 import  {NavLink} from "react-router-dom"
-import "./headerBar.css"
+import "../styles/headerBar.css"
 
 function headerBar() {
     return( 
-        <header>
+        <>
             <div className="Bar">
                 <div className="title">
                     <h1>
@@ -31,7 +31,7 @@ function headerBar() {
                 </nav>
 
             </div>
-        </header>
+        </>
     
     );
 }

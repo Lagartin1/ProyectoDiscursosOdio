@@ -3,7 +3,7 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
+import './styles/index.css'
 // 1. Import `extendTheme`
 import { extendTheme } from "@chakra-ui/react"
 
@@ -12,13 +12,12 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: '#4A5759',
+        bg: '#253450',
+
       },
     },
   },
 });
-
-export default theme;
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   

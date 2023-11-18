@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Home.css"
+import "../styles/Home.css"
 import { Stack, Radio, RadioGroup, Input, Img,Box} from '@chakra-ui/react'
 
 function Home() {
@@ -15,12 +15,12 @@ function Home() {
         console.log(urlSend)
     }
     return( 
-        <>
+        <body>
             <div className="inputCard">
                 <div className="stackWrapper">
                     <h3 className='titleSelect' >Selecciona la Red Social:</h3>
-                    <RadioGroup colorScheme={'red'} marginLeft={'2rem'}onChange={setValue} value={value}>
-                        <Stack  color={'#4A5759'} gap={'100px'}className='menuR' direction='row'>
+                    <RadioGroup colorScheme={'red'} marginLeft={'2vw'}onChange={setValue} value={value}>
+                        <Stack  color={'#fff'} gap={'2rem'}className='menuR' direction='row'>
                             <Radio value='I'>Instagram</Radio>
                             <Radio value='T'>Twitter (X)</Radio>
                             <Radio value='F'>Facebook</Radio>
@@ -28,7 +28,10 @@ function Home() {
                     </RadioGroup>
                 </div>
                 <div className='inputField'>
-                    <Input className='inputBox'value={urlSend} focusBorderColor={'#fff'} color={'#4A5759'} _hover={{borderColor:'none'}} borderWidth={'1px' } borderColor='#4A5759' onChange={handelChange} marginTop='2rem' size='md' width='40rem' variant='outline' placeholder='URL' />
+                    <Input width={'50vw'} className='inputBox'value={urlSend} focusBorderColor={'#fff'} 
+                    color={'#fff'} _hover={{borderColor:'#006d77'}} borderWidth={'1px' } 
+                    borderColor='#4A5759' onChange={handelChange} marginTop='2rem' size='md'
+                    variant='outline' placeholder='URL' />
                     <button className='sendB'onClick={handelClickS}> Send</button>
                 </div>
             </div>
@@ -55,7 +58,7 @@ function Home() {
                </div>
 
             </section>
-        </>
+        </body>
     );
 }
 

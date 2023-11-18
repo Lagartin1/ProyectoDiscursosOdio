@@ -1,14 +1,16 @@
 import HeaderBar from './components/headerBar'
 import Rutas from './routes/rutes'
-import "./normalize.css"
-import './App.css'
+import './styles/App.css';
+import './styles/normalize.css'
 
 
 function App() {
 
   return (
     <>
-      <HeaderBar />
+      <header>
+        <HeaderBar />
+      </header>
       <Rutas/>
     </>
   )
