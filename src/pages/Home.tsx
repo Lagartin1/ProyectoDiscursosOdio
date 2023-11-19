@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Home.css"
-import { Stack, Radio, RadioGroup, Input, Img,Box} from '@chakra-ui/react'
+import { Stack, Radio, RadioGroup, Input, Img,Box,FormControl, FormLabel} from '@chakra-ui/react'
 
 function Home() {
     const [value, setValue] = React.useState('');
@@ -15,25 +15,28 @@ function Home() {
         console.log(urlSend)
     }
     return( 
-        <body>
+        <>
             <div className="inputCard">
-                <div className="stackWrapper">
-                    <h3 className='titleSelect' >Selecciona la Red Social:</h3>
-                    <RadioGroup colorScheme={'red'} marginLeft={'2vw'}onChange={setValue} value={value}>
-                        <Stack  color={'#fff'} gap={'2rem'}className='menuR' direction='row'>
-                            <Radio value='I'>Instagram</Radio>
-                            <Radio value='T'>Twitter (X)</Radio>
-                            <Radio value='F'>Facebook</Radio>
-                        </Stack>
-                    </RadioGroup>
-                </div>
-                <div className='inputField'>
-                    <Input width={'50vw'} className='inputBox'value={urlSend} focusBorderColor={'#fff'} 
-                    color={'#fff'} _hover={{borderColor:'#006d77'}} borderWidth={'1px' } 
-                    borderColor='#4A5759' onChange={handelChange} marginTop='2rem' size='md'
-                    variant='outline' placeholder='URL' />
-                    <button className='sendB'onClick={handelClickS}> Send</button>
-                </div>
+                <FormControl isRequired display={'flex'} flexDirection={'column'} alignContent={'center'} alignItems={'center'}>
+                    <div className='redSocial'>
+                        <FormLabel color={'#fff'}>Red social</FormLabel>
+                        <RadioGroup  colorScheme={'red'} onChange={setValue} value={value}>
+                            <Stack  color={'#fff'} gap={'2rem'}className='menuR' direction='row'>
+                                <Radio value='I'>Instagram</Radio>
+                                <Radio value='T'>Twitter (X)</Radio>
+                                <Radio value='F'>Facebook</Radio>
+                            </Stack>
+                        </RadioGroup>
+                    </div>
+                    <div className='inputField'>
+                        <FormLabel color={'#fff'}>Url</FormLabel>
+                        <Input width={'50vw'} className='inputBox'value={urlSend} focusBorderColor={'#fff'} 
+                        color={'#fff'} _hover={{borderColor:'#006d77'}} borderWidth={'1px' } 
+                        borderColor='#4A5759' onChange={handelChange}  size='md'
+                        variant='outline' placeholder='URL' />
+                        <button className='sendB'onClick={handelClickS}> Send</button>
+                    </div>
+                </FormControl>
             </div>
             <section className="aboutApp">
                <div className="explanation">
@@ -58,7 +61,7 @@ function Home() {
                </div>
 
             </section>
-        </body>
+        </>
     );
 }
 

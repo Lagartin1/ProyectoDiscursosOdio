@@ -19,11 +19,11 @@
     align-content: center;
     align-items: center;
     margin-top: 2rem;
-    text-wrap: 1rem;
 }
 .sendB{
     margin-left: 2vw;
     border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
     box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
     padding: 10px 20px 10px 20px;
@@ -31,8 +31,22 @@
 
 }
 .sendB:hover{
+    color: black;
     background-color: #DEDBD2;
     transition: 0.25s ease-in-out;
+}
+.redSocial{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.inputField{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
 }
 .inputField .inputBox{
     box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);

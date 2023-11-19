@@ -25,7 +25,7 @@ function headerBar() {
                         <li>
                             <NavLink className={({ isActive, isPending }) =>
                                   isPending ? "pending" : isActive ? "active" : ""
-                                }to="/Perfil" >Perfil</NavLink>
+                                }to="/Login" >Login</NavLink>
                         </li>
                     </ul>
                 </nav>
