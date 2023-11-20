@@ -19,7 +19,7 @@ function Home() {
             <div className="inputCard">
                 <FormControl isRequired display={'flex'} flexDirection={'column'} alignContent={'center'} alignItems={'center'}>
                     <div className='redSocial'>
-                        <FormLabel color={'#fff'}>Red social</FormLabel>
+                        <FormLabel color={'#fff'}>Seleccione Red Social</FormLabel>
                         <RadioGroup  colorScheme={'red'} onChange={setValue} value={value}>
                             <Stack  color={'#fff'} gap={'2rem'}className='menuR' direction='row'>
                                 <Radio value='I'>Instagram</Radio>
@@ -29,29 +29,42 @@ function Home() {
                         </RadioGroup>
                     </div>
                     <div className='inputField'>
-                        <FormLabel color={'#fff'}>Url</FormLabel>
+                        <FormLabel color={'#fff'}>URL</FormLabel>
                         <Input width={'50vw'} className='inputBox'value={urlSend} focusBorderColor={'#fff'} 
                         color={'#fff'} _hover={{borderColor:'#006d77'}} borderWidth={'1px' } 
                         borderColor='#4A5759' onChange={handelChange}  size='md'
-                        variant='outline' placeholder='URL' />
-                        <button className='sendB'onClick={handelClickS}> Send</button>
+                        variant='outline' placeholder='Ingrese la URL...' />
+                        <button className='sendB'onClick={handelClickS}> Enviar</button>
                     </div>
                 </FormControl>
             </div>
             <section className="aboutApp">
-               <div className="explanation">
-                    <h1>About</h1>
+                <div className="explanation">
+                    <h1>Sobre nosotros</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit, aliquam arcu curabitur porta sagittis imperdiet, dapibus dui commodo proin aenean in.
-                        Accumsan vulputate orci sed dui tempor feugiat in rutrum mi risus nisl, a himenaeos maecenas massa enim nec aliquet faucibus nibh scelerisque.
-                        Auctor fermentum eu dapibus nec consequat inceptos facilisi accumsan arcu, fusce magna velit nascetur facilisis venenatis diam sollicitudin urna
-                        vehicula, primis est leo cubilia curabitur justo vitae dui.
+                    Bienvenido a la iniciativa del Instituto de Comunicación Social de la Universidad Austral de Chile
+                    para abordar la problemática de los discursos de odio en las redes sociales. Este proyecto tiene
+                    como objetivo desarrollar una plataforma especializada que permita la detección y análisis 
+                    automatizado de discursos perjudiciales en entornos digitales.
                     </p>
+                    <h1>Objetivo</h1>
                     <p>
-                        Sociis sapien pretium ligula ullamcorper eu aliquet vitae fermentum, magnis non per est diam mus cursus, donec sagittis condimentum fames ad quisque 
-                        aenean. Tellus pulvinar nisi dui vitae eleifend penatibus purus iaculis, quisque porta felis convallis nunc ac praesent vulputate lacinia, rhoncus 
-                        congue suspendisse vestibulum cursus varius neque. Platea et posuere purus venenatis vivamus habitant ante suspendisse ut congue cras leo, justo in 
-                        nam tristique enim mauris inceptos diam massa felis litora.
+                    Crear una herramienta avanzada que contribuya a la comprensión y mitigación de discursos de odio 
+                    en línea, proporcionando datos precisos y análisis detallados.
+                    </p>
+                    <h1>Meta</h1>
+                    <p>
+                    Desarrollar una interfaz fácil de usar que permita a los investigadores del Instituto recopilar
+                    información relevante de diversas redes sociales, identificar patrones de discursos de odio, y 
+                    generar informes visuales que respalden la investigación académica y estrategias de comunicación 
+                    social.
+
+                    Al unir tecnología y análisis de datos, aspiramos a fortalecer la capacidad del Instituto para
+                    abordar los desafíos contemporáneos de la comunicación en línea y fomentar un entorno digital más 
+                    inclusivo y respetuoso.
+
+                    ¡Explora nuestra plataforma y únete a nosotros en la lucha contra los discursos de odio en las redes
+                    sociales!
                     </p>
                </div>
                <div className="others">

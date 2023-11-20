@@ -45,14 +45,14 @@ return(
                         <Input id={'user'}width={'50vw'} className='inputBox'value={Usuario} focusBorderColor={'#fff'} 
                         color={'#fff'} borderWidth={'1px' } 
                         borderColor='#4A5759' _placeholder={{opacity:'0.6',color:'#fff'}} onChange={handelChangeU}  size='md'
-                        variant='outline' placeholder='Usuario' />
+                        variant='outline' placeholder='Ingrese su nombre de usuario...' />
                     </div>
                     <div className='containerL'>
                         <FormLabel color={'#fff'}>Usuario</FormLabel>
                         <Input  id={'pass'}width={'50vw'} type='password' className='inputBox' value={Password} focusBorderColor={'#fff'} 
                         color={'#fff'}  borderWidth={'1px' } 
                         borderColor='#4A5759' onChange={handelChangeP}  size='md'
-                        variant='outline' _placeholder={{opacity:'0.6',color:'#fff'}} placeholder='Password' />
+                        variant='outline' _placeholder={{opacity:'0.6',color:'#fff'}} placeholder='Ingrese su contraseña...' />
                     </div>
                     <button className='logB' onClick={handelClickLog}> Login</button>
                     <button className='singB' onClick={handelClickSing}> Singup</button>

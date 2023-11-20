@@ -7,7 +7,7 @@ function headerBar() {
             <div className="Bar">
                 <div className="title">
                     <h1>
-                        Analizador de Discursos de odio
+                        Analizador de Discursos de Odio
                     </h1>
                 </div>
                 <nav className="navigatorButtons">
@@ -15,7 +15,7 @@ function headerBar() {
                         <li>
                             <NavLink className={({ isActive, isPending }) =>
                                   isPending ? "pending" : isActive ? "active" : ""
-                                }to="/" > Home</NavLink>
+                                }to="/" > Inicio</NavLink>
                         </li>
                         <li>
                             <NavLink className={({ isActive, isPending }) =>
