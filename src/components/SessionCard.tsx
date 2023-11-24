@@ -16,7 +16,6 @@ function SessionCard(){
     };
     const handelClickLog = ()=>{
         const validSession = Usuario === 'usuario' && Password==='password';
-        
         if(validSession){
             sessionStorage.setItem('isLoggedIn', 'true');
             navigate('/')
@@ -48,7 +47,7 @@ return(
                         variant='outline' placeholder='Ingrese su nombre de usuario...' />
                     </div>
                     <div className='containerL'>
-                        <FormLabel color={'#fff'}>Usuario</FormLabel>
+                        <FormLabel color={'#fff'}>Constraseña</FormLabel>
                         <Input  id={'pass'}width={'50vw'} type='password' className='inputBox' value={Password} focusBorderColor={'#fff'} 
                         color={'#fff'}  borderWidth={'1px' } 
                         borderColor='#4A5759' onChange={handelChangeP}  size='md'

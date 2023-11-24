@@ -1,43 +1,13 @@
 import React from 'react'
 import "../styles/Home.css"
-import { Stack, Radio, RadioGroup, Input, Img,Box,FormControl, FormLabel} from '@chakra-ui/react'
+import InputCard from '../components/inputCard';
+import {Img,Box,} from '@chakra-ui/react'
 
 function Home() {
-    const [value, setValue] = React.useState('');
-    const [urlSend,setUrlSend] = React.useState('');
-    const handelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setUrlSend(event.target.value);
-    };
-    const handelClickS=() =>{
-        if ((value === null || value === '') && (urlSend === null || urlSend === '')){
-            null
-        }
-        console.log(urlSend)
-    }
+    
     return( 
         <>
-            <div className="inputCard">
-                <FormControl isRequired display={'flex'} flexDirection={'column'} alignContent={'center'} alignItems={'center'}>
-                    <div className='redSocial'>
-                        <FormLabel color={'#fff'}>Seleccione Red Social</FormLabel>
-                        <RadioGroup  colorScheme={'red'} onChange={setValue} value={value}>
-                            <Stack  color={'#fff'} gap={'2rem'}className='menuR' direction='row'>
-                                <Radio value='I'>Instagram</Radio>
-                                <Radio value='T'>Twitter (X)</Radio>
-                                <Radio value='F'>Facebook</Radio>
-                            </Stack>
-                        </RadioGroup>
-                    </div>
-                    <div className='inputField'>
-                        <FormLabel color={'#fff'}>URL</FormLabel>
-                        <Input width={'50vw'} className='inputBox'value={urlSend} focusBorderColor={'#fff'} 
-                        color={'#fff'} _hover={{borderColor:'#006d77'}} borderWidth={'1px' } 
-                        borderColor='#4A5759' onChange={handelChange}  size='md'
-                        variant='outline' placeholder='Ingrese la URL...' />
-                        <button className='sendB'onClick={handelClickS}> Enviar</button>
-                    </div>
-                </FormControl>
-            </div>
+            <InputCard/>            
             <section className="aboutApp">
                 <div className="explanation">
                     <h1>Sobre nosotros</h1>
@@ -68,9 +38,7 @@ function Home() {
                     </p>
                </div>
                <div className="others">
-                <Box  height='450px'margin={'0.5rem 15rem 0.5rem'} borderRadius={'5rem'} overflow={'hidden'} bg='#B0C4B1;'>
-                    <Img marginLeft={'1rem'} boxSize={'500px'}src='https://upload.wikimedia.org/wikipedia/commons/e/ee/Pirámide_del_odio.svg' alt='Piramide De odio' />
-                </Box>
+                <Img height={'500px'} margin={'4rem 5rem'}src={'https://ajuntament.barcelona.cat/bcnvsodi/wp-content/uploads/2018/05/Quimica-odi-ESP.jpg'}/>
                </div>
 
             </section>

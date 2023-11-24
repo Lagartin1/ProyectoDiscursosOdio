@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+    
       <header>
         <HeaderBar />
       </header>
