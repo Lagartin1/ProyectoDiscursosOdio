@@ -40,18 +40,40 @@ function InputCard() {
                         </RadioGroup>
 
                         <FormLabel id={'urlInp'} marginTop={'1rem'} color={'#fff'}>URL</FormLabel>
-                        <Input id={'urlInp'} width={'50vw'} className='inputBox' value={urlSend} focusBorderColor={'#fff'} 
-                            color={'#fff'} borderWidth={'2px' } 
-                            borderColor='#4A5759' onChange={handelChange} size='md'
-                            variant='outline' placeholder='Ingrese la URL...' />
+                        <Input 
+                            id={'urlInp'}
+                            width={'50vw'} 
+                            className='inputBox' 
+                            value={urlSend} 
+                            focusBorderColor={'#fff'} 
+                            color={'#fff'} 
+                            borderWidth={'2px' }
+                            _placeholder={{ opacity: '0.6', color: '#fff' }}
+                            borderColor='#4A5759' 
+                            onChange={handelChange} 
+                            size='md'
+                            variant='outline' 
+                            placeholder='Ingrese la URL...'
+                        />
 
 {/** esta barra para ingresar palabras luego hay que eliminarla, ya que implementaremos una IA para que haga el trabajo
  */}
                         <FormLabel id={'palabInp'} marginTop={'1rem'} color={'#fff'}>Palabras claves (separadas por coma)</FormLabel>
-                        <Input id={'palabInp'} width={'50vw'} className='inputBox' value={palabras} focusBorderColor={'#fff'} 
-                            color={'#fff'} borderWidth={'2px' } 
-                            borderColor='#4A5759' onChange={handelChangeP}  size='md'
-                            variant='outline' placeholder='Ingrese palabras...' />
+                        <Input 
+                            id={'palabInp'} 
+                            width={'50vw'}
+                            className='inputBox' 
+                            value={palabras} 
+                            focusBorderColor={'#fff'} 
+                            color={'#fff'} 
+                            borderWidth={'2px' } 
+                            borderColor='#4A5759' 
+                            onChange={handelChangeP} 
+                            size='md'
+                            variant='outline' 
+                            placeholder='Ingrese palabras...'
+                            _placeholder={{ opacity: '0.6', color: '#fff' }}
+                        />
 
 
                         <button className='sendB' onClick={handelClickS}> Enviar</button>
