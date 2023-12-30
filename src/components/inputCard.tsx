@@ -6,7 +6,7 @@ import "../styles/inputCard.css";
 function InputCard() {
     const [value, setValue] = React.useState('');
     const [urlSend, setUrlSend] = React.useState('');
-    const [palabras, setPalabras] = React.useState('');
+    const [palabras] = React.useState('');
 
     const handleChange = (event: React.SetStateAction<string>) => {
         setValue(event);
