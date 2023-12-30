@@ -1,87 +1,76 @@
-import React from 'react'
-import "../styles/inputCard.css"
-import { Stack, Radio, RadioGroup, Input,FormControl, FormLabel} from '@chakra-ui/react'
+import React from 'react';
+import { Stack, Radio, RadioGroup, Input, FormControl, FormLabel } from '@chakra-ui/react';
+import { FaFacebook, FaInstagram, FaTwitter, FaLink } from 'react-icons/fa';
+import "../styles/inputCard.css";
 
 function InputCard() {
     const [value, setValue] = React.useState('');
-    const [urlSend,setUrlSend] = React.useState('');
-    const [palabras,setPalabras] = React.useState('');
+    const [urlSend, setUrlSend] = React.useState('');
+    const [palabras, setPalabras] = React.useState('');
 
-    const handelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (event: React.SetStateAction<string>) => {
+        setValue(event);
+    };
+
+    const handleChangeUrl = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setUrlSend(event.target.value);
     };
 
-    const handelChangeP = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setPalabras(event.target.value)
-    };
-
-    const handelClickS = () => {
-        if ((value === null || value === '') && (urlSend === null || urlSend === '')){
+    const handleClickSend = () => {
+        if ((value === null || value === '') && (urlSend === null || urlSend === '')) {
             return;
         }
         if (palabras) {
             console.log(palabras);
         }
         console.log(urlSend);
-    }
+    };
 
     return (
-        <>
-            <div className="inputCard">
-                <FormControl label='InputControl' isRequired display={'flex'} flexDirection={'column'} alignContent={'center'} alignItems={'center'}>
-                    <div className='inputField'>
-                        <FormLabel id={'redInp'} color={'#fff'}>Selecciona red social</FormLabel>
-                        <RadioGroup id={'redInp'} colorScheme={'red'} onChange={setValue} value={value}>
-                            <Stack color={'#fff'} gap={'2rem'} className='menuR' direction='row'>
-                                <Radio value='F'>Facebook</Radio>
-                                <Radio value='I'>Instagram</Radio>
-                                <Radio value='T'>Twitter (X)</Radio>
+        <div className="inputCard">
+            <FormControl label="InputControl" isRequired display={'flex'} flexDirection={'column'} alignContent={'center'} alignItems={'center'}>
+                <div className='inputField'>
+                    <RadioGroup colorScheme={'red'} onChange={handleChange} value={value}>
+                        <Stack color={'#fff'} gap={'1rem'} className='menuR' direction='column' align='center'>
+                            <FormLabel id={'redInp'} color={'#fff'}>Selecciona red social</FormLabel>
+                            <Stack direction='row' align='center' spacing={5}>
+                                <Radio value='F'>
+                                    <FaFacebook size={30} />
+                                </Radio>
+                                <Radio value='I'>
+                                    <FaInstagram size={30} />
+                                </Radio>
+                                <Radio value='T'>
+                                    <FaTwitter size={30} />
+                                </Radio>
                             </Stack>
-                        </RadioGroup>
+                        </Stack>
+                    </RadioGroup>
 
-                        <FormLabel id={'urlInp'} marginTop={'1rem'} color={'#fff'}>URL</FormLabel>
-                        <Input 
+                    <Stack direction='row' alignItems='center' style={{ marginTop: '2rem' }}>
+                        <FaLink size={25} color="#fff" style={{ marginRight: '2px' }} />
+                        <Input
                             id={'urlInp'}
-                            width={'50vw'} 
-                            className='inputBox' 
-                            value={urlSend} 
-                            focusBorderColor={'#fff'} 
-                            color={'#fff'} 
-                            borderWidth={'2px' }
+                            width={'40vw'}
+                            className='inputBox'
+                            value={urlSend}
+                            focusBorderColor={'#fff'}
+                            color={'#fff'}
+                            borderWidth={'2px'}
                             _placeholder={{ opacity: '0.6', color: '#fff' }}
-                            borderColor='#4A5759' 
-                            onChange={handelChange} 
+                            borderColor='#4A5759'
+                            onChange={handleChangeUrl}
                             size='md'
-                            variant='outline' 
+                            variant='outline'
                             placeholder='Ingrese la URL...'
                         />
+                    </Stack>
 
-{/** esta barra para ingresar palabras luego hay que eliminarla, ya que implementaremos una IA para que haga el trabajo
- */}
-                        <FormLabel id={'palabInp'} marginTop={'1rem'} color={'#fff'}>Palabras claves (separadas por coma)</FormLabel>
-                        <Input 
-                            id={'palabInp'} 
-                            width={'50vw'}
-                            className='inputBox' 
-                            value={palabras} 
-                            focusBorderColor={'#fff'} 
-                            color={'#fff'} 
-                            borderWidth={'2px' } 
-                            borderColor='#4A5759' 
-                            onChange={handelChangeP} 
-                            size='md'
-                            variant='outline' 
-                            placeholder='Ingrese palabras...'
-                            _placeholder={{ opacity: '0.6', color: '#fff' }}
-                        />
-
-
-                        <button className='sendB' onClick={handelClickS}> Enviar</button>
-                    </div>
-                </FormControl>
-            </div>
-        </>
-    )
+                    <button className='sendB' onClick={handleClickSend}>Enviar</button>
+                </div>
+            </FormControl>
+        </div>
+    );
 }
 
 export default InputCard;

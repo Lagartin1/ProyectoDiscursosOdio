@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-import { FormControl, useToast, Input } from '@chakra-ui/react';
+import { Box, FormControl, useToast, Input } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import { LockIcon } from '@chakra-ui/icons';
+import { FaUser } from 'react-icons/fa';
 import '../styles/Login.css';
 
 function SessionCard() {
@@ -40,7 +42,7 @@ function SessionCard() {
 
         if (validSession) {
             sessionStorage.setItem('isLoggedIn', 'true');
-            navigate('/');
+            navigate('/Home');
             toast({
                 title: 'Inicio de sesión exitoso.',
                 status: 'success',
@@ -109,39 +111,49 @@ function SessionCard() {
                 <FormControl isRequired>
                     <div className="wrapperLogin">
                         <div className="containerL">
-                            <Input
-                                id={'user'}
-                                width={'20vw'}
-                                value={isRegistering ? NuevoUsuario : Usuario}
-                                focusBorderColor={'#fff'}
-                                color={'#fff'}
-                                borderWidth={'2px'}
-                                borderColor='#4A5759'
-                                _placeholder={{ opacity: '0.6', color: '#fff' }}
-                                onChange={isRegistering ? handelChangeNuevoUsuario : handelChangeU}
-                                size='md'
-                                variant='outline'
-                                placeholder={isRegistering ? 'Nuevo usuario...' : 'Nombre de usuario...'}
-                                onKeyDown={handleKeyDown}
-                            />
+                            <Box display="flex" alignItems="center">
+                                <Box mr={2}>
+                                    <FaUser color="#fff" size={20} />
+                                </Box>
+                                <Input
+                                    id={'user'}
+                                    width={'20vw'}
+                                    value={isRegistering ? NuevoUsuario : Usuario}
+                                    focusBorderColor={'#fff'}
+                                    color={'#fff'}
+                                    borderWidth={'2px'}
+                                    borderColor='#4A5759'
+                                    _placeholder={{ opacity: '0.6', color: '#fff' }}
+                                    onChange={isRegistering ? handelChangeNuevoUsuario : handelChangeU}
+                                    size='md'
+                                    variant='outline'
+                                    placeholder={isRegistering ? 'Nuevo usuario...' : 'Nombre de usuario...'}
+                                    onKeyDown={handleKeyDown}
+                                />
+                            </Box>
                         </div>
                         <div className="containerL">
-                            <Input
-                                id={'pass'}
-                                width={'20vw'}
-                                type='password'
-                                value={isRegistering ? NuevaPassword : Password}
-                                focusBorderColor={'#fff'}
-                                color={'#fff'}
-                                borderWidth={'2px'}
-                                borderColor='#4A5759'
-                                onChange={isRegistering ? handelChangeNuevaPassword : handelChangeP}
-                                size='md'
-                                variant='outline'
-                                _placeholder={{ opacity: '0.6', color: '#fff' }}
-                                placeholder={isRegistering ? 'Nueva contraseña...' : 'Contraseña...'}
-                                onKeyDown={handleKeyDown}
-                            />
+                            <Box display="flex" alignItems="center">
+                                <Box mr={2}>
+                                    <LockIcon color="#fff" boxSize={5} />
+                                </Box>
+                                <Input
+                                    id={'pass'}
+                                    width={'20vw'}
+                                    type='password'
+                                    value={isRegistering ? NuevaPassword : Password}
+                                    focusBorderColor={'#fff'}
+                                    color={'#fff'}
+                                    borderWidth={'2px'}
+                                    borderColor='#4A5759'
+                                    onChange={isRegistering ? handelChangeNuevaPassword : handelChangeP}
+                                    size='md'
+                                    variant='outline'
+                                    _placeholder={{ opacity: '0.6', color: '#fff' }}
+                                    placeholder={isRegistering ? 'Nueva contraseña...' : 'Contraseña...'}
+                                    onKeyDown={handleKeyDown}
+                                />
+                            </Box>
                         </div>
                         <button className='logB' onClick={isRegistering ? handelClickSing : handelClickLog}>
                             {isRegistering ? 'Registrarme' : 'Iniciar sesión'}

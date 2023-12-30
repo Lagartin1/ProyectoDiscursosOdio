@@ -23,3 +23,17 @@
     align-items: center;
     align-content: center;
 }
+
+.explanation-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 10vh;
+    width: 50rem;
+    height: 40rem;
+    color: #fff;
+    background: #415A77;
+    border-radius: 0.4rem;
+    padding: 20px;
+}

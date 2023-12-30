@@ -1,13 +1,13 @@
 .inputCard{
     display: flex;
-    margin-top: 5vh;
+    margin-top: 10vh;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 70vw;
-    height: 50vh;
+    width: 55vw;
+    height: 42vh;
     background: #415A77;
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
 }
 .titleSelect{
     text-align: center;
@@ -22,14 +22,14 @@
 }
 
 .sendB {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 0.5vw;
     border: 2px solid #fff;
     color: #fff;
     background-color: transparent;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
-    border-radius: 0.6rem;
+    border-radius: 0.4rem;
     cursor: pointer;
 }
 
@@ -47,7 +47,7 @@
 
 .inputField{
     flex-direction: column;
-    margin-top: 2vh;
+    margin-top: 5vh;
     display: flex;
     align-items: center;
     align-content: center;

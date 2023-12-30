@@ -2,8 +2,8 @@ import "../styles/Home.css"
 
 function About() {
     return (
-        <div className="explanation">
-            <h1>Sobre nosotros</h1>
+        <div className="explanation-box">
+            <h1>Nosotros</h1>
             <p>
             Bienvenido a la iniciativa del Instituto de Comunicación Social de la Universidad Austral de Chile
             para abordar la problemática de los discursos de odio en las redes sociales. Este proyecto tiene

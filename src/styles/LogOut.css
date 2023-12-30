@@ -8,7 +8,7 @@
     height: 22rem;
     color: #fff;
     background: #415A77;
-    border-radius: 2rem;
+    border-radius: 0.4rem;
 }
 
 .logoutcard::before{
@@ -52,7 +52,7 @@
     background-color: transparent;
     box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
-    border-radius: 0.9rem;
+    border-radius: 0.4rem;
 
 }
 .LoB:hover{

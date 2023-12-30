@@ -5,7 +5,6 @@ import { Navigate } from 'react-router-dom';
 import { useToast } from '@chakra-ui/react';
 */
 
-
 // lo comentado usa datos del log in , posible NO implentacion
 
 
@@ -30,9 +29,9 @@ function Historial() {
                     <>
             </>*/}
                         {/* hacer un map para renderizar segun lo entragdo por la api */}
-                        <Card url="" fecha='dd-mm-yyy' porcentaje={60}/>
-                        <Card url="" fecha='dd-mm-yyy' porcentaje={70}/>
-                        <Card url="" fecha='dd-mm-yyy' porcentaje={10}/>
+                        <Card url="" fecha='dd-mm-yyyy' porcentaje={60}/>
+                        <Card url="" fecha='dd-mm-yyyy' porcentaje={70}/>
+                        <Card url="" fecha='dd-mm-yyyy' porcentaje={25}/>
                 {/* </> }*/}
 
             </section>

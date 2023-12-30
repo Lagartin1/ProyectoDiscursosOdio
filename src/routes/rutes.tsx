@@ -8,10 +8,10 @@ function Rutas(){
     return (
         <div className='bodyDiv'>
           <Routes>
-            <Route path='/Login' element={<Login/>}/>
+            <Route path='/' element={<Login/>}/>
             <Route path='/Historial' element={<Historial/>}/>
             <Route path='/About' element={<About/>}/>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/Home' element={<Home/>}/>
           </Routes>
         </div>
       );
