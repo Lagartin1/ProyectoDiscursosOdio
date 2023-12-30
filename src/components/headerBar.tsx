@@ -6,26 +6,32 @@ function headerBar() {
         <>
             <div className="Bar">
                 <div className="title">
-                    <h1>
-                        Analizador de Discursos de Odio
+                    <h1 title="Definición discurso de odio">
+                        <a href="https://es.wikipedia.org/wiki/Discurso_de_odio">[ HateAlert ]</a>
                     </h1>
                 </div>
+                
                 <nav className="navigatorButtons">
                     <ul>
                         <li>
                             <NavLink className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }to="/Login" > Acceso</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
                                 }to="/" > Inicio</NavLink>
                         </li>
                         <li>
                             <NavLink className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
+                                    isPending ? "pending" : isActive ? "active" : ""
                                 }to="/Historial" >Historial</NavLink>
                         </li>
                         <li>
                             <NavLink className={({ isActive, isPending }) =>
-                                  isPending ? "pending" : isActive ? "active" : ""
-                                }to="/Login" >Login</NavLink>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }to="/About" > Acerca de</NavLink>
                         </li>
                     </ul>
                 </nav>

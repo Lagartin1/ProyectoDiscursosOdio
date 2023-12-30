@@ -1,4 +1,3 @@
-import React from 'react';
 import SessionCard from '../components/SessionCard';
 import LogoutCard from '../components/LogoutCard';
 
@@ -12,4 +11,4 @@ function Login() {
         </>
     )
 }
-export default Login
+export default Login;

@@ -4,7 +4,7 @@
     align-items: center;
     align-content: center;
     margin-top: 2vh;
-    width: 90vw;
+    width: 80vw;
     height: 10vh;
     background:#415A77;
     border-radius: 0.25rem;
@@ -13,28 +13,29 @@
 .title{
     display: flex;
     flex-direction: row;
-    margin-left: 2vw;
+    margin-left: 3vw;
     flex-grow: 0.7;
 }
 nav ul{
     list-style: none;
     display:flex;
     flex-direction: row;  
-    gap: 100px;    
+    gap: 130px;    
 }
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     display: inline-block;
-    padding: 0.9rem;
-    border:1px solid #fff;
+    padding: 0.5rem;
+    border: 2px solid #fff;
     cursor: pointer;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 0.6rem;
-    box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2);
     color: #0D1B2A;
 }
+
 
 nav ul li a:hover{
     background-color: #DEDBD2;

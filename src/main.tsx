@@ -1,30 +1,25 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './styles/index.css'
-// 1. Import `extendTheme`
-import { extendTheme } from "@chakra-ui/react"
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import App from './App';
 
-// 2. Call `extendTheme` and pass your custom values
 const theme = extendTheme({
   styles: {
     global: {
       body: {
         bg: '#253450',
-
+        color: 'white',
+        fontFamily: 'Arial, sans-serif', 
       },
     },
   },
 });
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  
+ReactDOM.render(
   <ChakraProvider theme={theme}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    </ChakraProvider>
-   
-)
+  </ChakraProvider>,
+  document.getElementById('root')
+);

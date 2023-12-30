@@ -3,16 +3,15 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin-top: 20vh;
-    width: 50rem;
-    height: 25rem;
+    margin-top: 10vh;
+    width: 30rem;
+    height: 22rem;
     color: #fff;
     background: #415A77;
     border-radius: 2rem;
 }
 .logincard .loginT{
-    font-family: 'Satisfy', cursive;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 
@@ -23,7 +22,6 @@
     left: 30vw;
     width: 200px;
     height: 100px;
-    background-color:#0FF4C6 ;
     filter: blur(100px);
 }
 .logincard::after{
@@ -33,7 +31,6 @@
     left: 60vw;
     width: 200px;
     height: 100px;
-    background-color:#ffc300 ;
     filter: blur(100px);
 }
 
@@ -43,28 +40,24 @@
     margin: 0 10vh;
     
 }
-.containerL{
+.containerL {
     display: flex;
     margin-top: 2rem;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
-    
 }
-.inputBox{
-    box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.4);
-}
+
 .logB{
-    margin-top: 2vh;
-    margin-left: 2vw;
-    width: 100px;
-    border: 1px solid #fff;
+    margin-top: 4.5vh;
+    margin-left: 0.1vw;
+    width: 120px;
+    border: 2px solid #fff;
     color: #fff;
     background-color: transparent;
     box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px 10px 20px;
+    padding: 0.5rem;
     border-radius: 0.9rem;
-
 }
 .logB:hover{
     color: black;
@@ -73,14 +66,14 @@
 }
 
 .singB{
-    margin-top: 2vh;
-    margin-left: 2vw;
-    width: 100px;
-    border: 1px solid #fff;
+    margin-top: 4.5vh;
+    margin-left: 1.5vw;
+    width: 195px;
+    border: 2px solid #fff;
     color: #fff;
     background-color: transparent;
     box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px 10px 20px;
+    padding: 0.5rem;
     border-radius: 0.9rem;
 
 }

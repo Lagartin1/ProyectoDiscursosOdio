@@ -1,6 +1,6 @@
-
 import { useNavigate } from 'react-router-dom';
 import "../styles/LogOut.css"
+
 
 function LogoutCard(){
     const navigate = useNavigate();
@@ -12,8 +12,8 @@ function LogoutCard(){
         <>
         <div className="logoutcard">
                 <div className="wrapperLogOut">
-                    <h1 className='logoutT'>Usted Ya esta en una sesión</h1>
-                    <button className='LoB' onClick={handelLogout}> Log Out</button>
+                    <h1 className='logoutT'>Ya está en una sesión</h1>
+                    <button className='LoB' onClick={handelLogout}> Cerrar sesión</button>
                 </div>
 
         </div>

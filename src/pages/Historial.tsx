@@ -1,4 +1,3 @@
-
 import Card from '../components/card'
 import "../styles/Historial.css"
 /*
@@ -17,8 +16,8 @@ function Historial() {
     return(
         <div className='bodyDiv'>
             <section className="infoH">
-               { /*{!sValid ? 
-                     <> 
+            { /*{!sValid ? 
+                    <> 
                         {toast({
                             title:'Error',
                             description:'No haz iniciado sesión',
@@ -29,16 +28,16 @@ function Historial() {
                         <Navigate to="/Login" replace={true} />
                     </> :
                     <>
-               </>*/}
+            </>*/}
                         {/* hacer un map para renderizar segun lo entragdo por la api */}
                         <Card url="" fecha='dd-mm-yyy' porcentaje={60}/>
                         <Card url="" fecha='dd-mm-yyy' porcentaje={70}/>
                         <Card url="" fecha='dd-mm-yyy' porcentaje={10}/>
-                   {/* </> }*/}
+                {/* </> }*/}
 
             </section>
         </div>
     )
 
 }
-export default Historial
+export default Historial;

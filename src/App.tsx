@@ -3,18 +3,16 @@ import Rutas from './routes/rutes'
 import './styles/App.css';
 import './styles/normalize.css'
 
-
 function App() {
-
   return (
     <>
-    
       <header>
         <HeaderBar />
       </header>
-      <Rutas/>
+      <Rutas />
     </>
-  )
+  );
 }
+
 
 export default App
