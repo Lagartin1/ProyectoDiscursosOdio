@@ -12,6 +12,7 @@ function SessionCard() {
     const [NuevoUsuario, setNuevoUsuario] = React.useState('');
     const [NuevaPassword, setNuevaPassword] = React.useState('');
     const [isRegistering, setIsRegistering] = React.useState(false); // Nuevo estado para el modo de registro
+    //const [isLoggedIn, setIsLoggedIn] = React.useState(false); // para inicio de session
     const [usersMap, setUsersMap] = React.useState(
         new Map([
             ['hola', '123'],
@@ -20,6 +21,7 @@ function SessionCard() {
         ])
     );
     const navigate = useNavigate();
+    
 
     const handelChangeU = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUser(event.target.value);
@@ -41,7 +43,10 @@ function SessionCard() {
         const validSession = usersMap.get(Usuario) === Password;
 
         if (validSession) {
-            sessionStorage.setItem('isLoggedIn', 'true');
+            // esto es para que se cambie el valor de iniciar sesion a true
+            //sessionStorage.setItem('isLoggedIn', 'true');
+            //setIsLoggedIn(true); // Actualiza el estado de inicio de sesión
+            
             navigate('/Home');
             toast({
                 title: 'Inicio de sesión exitoso.',

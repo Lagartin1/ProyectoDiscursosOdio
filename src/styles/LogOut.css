@@ -18,7 +18,6 @@
     left: 30vw;
     width: 200px;
     height: 100px;
-    background-color:#0FF4C6 ;
     filter: blur(100px);
 }
 .logoutcard::after{
@@ -28,7 +27,6 @@
     left: 60vw;
     width: 200px;
     height: 100px;
-    background-color:#ffc300 ;
     filter: blur(100px);
 }
 

@@ -1,83 +1,70 @@
-.logincard{
+.logincard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     margin-top: 10vh;
     width: 30rem;
-    height: 22rem;
+    height: 27rem;
     color: #fff;
     background: #415A77;
     border-radius: 0.4rem;
+    position: relative;
 }
-.logincard .loginT{
-    font-size: 40px;
+
+.logincard .loginT {
+    font-size: 2rem; 
     font-weight: 500;
+    margin-bottom: 1rem; 
 }
 
-.logincard::before{
+.logincard::before,
+.logincard::after {
     content: "";
     position: absolute;
-    top:45vh;
-    left: 30vw;
-    width: 200px;
-    height: 100px;
-    filter: blur(100px);
-}
-.logincard::after{
-    content: "";
-    position: absolute;
-    top:35vh;
-    left: 60vw;
-    width: 200px;
-    height: 100px;
-    filter: blur(100px);
+    width: 100px;
+    height: 50px;
+    filter: blur(50px);
 }
 
-
-.wrapperLogin{
-    flex-direction: column;
-    margin: 0 10vh;
-    
+.logincard::before {
+    top: 50%;
+    left: 5%; 
 }
-.containerL {
+
+.logincard::after {
+    top: 50%; 
+    right: 5%; 
+}
+
+.wrapperLogin {
     display: flex;
-    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    margin: 2rem 0; 
 }
 
-.logB{
-    margin-top: 4.5vh;
-    margin-left: 0.1vw;
+.containerL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.logB,
+.singB {
+    margin-top: 1.5rem; 
     width: 120px;
     border: 2px solid #fff;
     color: #fff;
     background-color: transparent;
-    box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
     border-radius: 0.4rem;
-}
-.logB:hover{
-    color: black;
-    background-color: #DEDBD2;
-    transition: 0.25s ease-in-out;
+    cursor: pointer; 
 }
 
-.singB{
-    margin-top: 4.5vh;
-    margin-left: 1.5vw;
-    width: 195px;
-    border: 2px solid #fff;
-    color: #fff;
-    background-color: transparent;
-    box-shadow:  0 0 20px 3px rgba(0, 0, 0, 0.2);
-    padding: 0.5rem;
-    border-radius: 0.4rem;
-
-}
-.singB:hover{
+.logB:hover,
+.singB:hover {
     color: black;
     background-color: #DEDBD2;
     transition: 0.25s ease-in-out;

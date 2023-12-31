@@ -34,17 +34,19 @@ nav ul li a {
     cursor: pointer;
     border-radius: 0.4rem;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2);
-    color: black;
+    color: #fff;
 }
 
 
 nav ul li a:hover{
+    color: black;
     background-color: #DEDBD2;
-    transition: 0.25s ease-in-out;   
+    transition: 0.25s ease-in-out; 
 }
 
 nav ul a.active{
-    background: #f3f5f5;
+    color: black;
+    background-color: #DEDBD2;
     border-color: transparent;
 
 }
