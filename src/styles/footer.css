@@ -1,0 +1,12 @@
+/* footer.css */
+.footer-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}

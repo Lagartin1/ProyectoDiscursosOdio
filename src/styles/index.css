@@ -6,7 +6,7 @@
   left: 0;
   font-family: 'Oswald','sans-serif','Satisfy';
 }
-hmtl{
+html{
   box-sizing: inherit;
   font-size: 65.5%;
 }
@@ -16,4 +16,6 @@ body{
   align-items: center;
   align-content: center;
   text-align: center;
+  padding-bottom: 60px;
 }
+
