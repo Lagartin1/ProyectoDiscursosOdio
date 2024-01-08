@@ -7,8 +7,8 @@ function Footer() {
     return (
         <footer className="footer">
         
-        <a href="https://www.uach.cl/" target="_blank">
-        <img src={LogoUach} width="55px" height="55px" alt="logo facultad" />
+        <a href="https://www.uach.cl/inicio-uach" target="_blank">
+        <img src={LogoUach} width="150px" height="110px" alt="logo uach" />
         </a>
 
         <a href="https://ingenieria.uach.cl/" target="_blank">
@@ -16,7 +16,7 @@ function Footer() {
         </a>
 
         <a href="http://informatica.uach.cl/" target="_blank">
-        <img src={LogoInformatica} width="150px" height="110px" alt="logo facultad" />
+        <img src={LogoInformatica} width="150px" height="110px" alt="logo informatica" />
         </a>
 
         <div>
