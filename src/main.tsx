@@ -5,7 +5,7 @@ import App from './App';
 // #253450 este color lo tenia ya
 // #002034 este color me gusto
 // #0f3148
-// #004557
+// #004557 este es el de siempre
 const theme = extendTheme({
   styles: {
     global: {
@@ -17,6 +17,7 @@ const theme = extendTheme({
     },
   },
 });
+
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>

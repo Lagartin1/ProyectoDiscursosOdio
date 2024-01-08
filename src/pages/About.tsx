@@ -5,11 +5,16 @@ function About() {
         <div className="explanation-box">
             <h1>Nosotros</h1>
             <p>
-            Bienvenido a la iniciativa del Instituto de Comunicación Social de la Universidad Austral de Chile
-            para abordar la problemática de los discursos de odio en las redes sociales. Este proyecto tiene
-            como objetivo desarrollar una plataforma especializada que permita la detección y análisis 
-            automatizado de discursos perjudiciales en entornos digitales.
+                Bienvenido a la iniciativa del <a 
+                href="https://humanidades.uach.cl/home/institutos-y-centros/instituto-de-comunicacion-social/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Instituto de Comunicación Social de la Universidad Austral de Chile
+                </a> para abordar la problemática de los discursos de odio en las redes sociales. Este proyecto tiene
+                como objetivo desarrollar una plataforma especializada que permita la detección y análisis 
+                automatizado de discursos perjudiciales en entornos digitales.
             </p>
+
             <h1>Objetivo</h1>
             <p>
             Crear una herramienta avanzada que contribuya a la comprensión y mitigación de discursos de odio 

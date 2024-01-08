@@ -1,12 +1,27 @@
-/* footer.css */
-.footer-container {
+.footer {
     display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+    padding: 20px;
 }
 
-.footer {
-    margin-top: auto;
-    padding: 20px;
-    text-align: center;
+.footer a {
+    margin: 10px; /* Ajusta el espacio entre los logos según tus preferencias */
+}
+
+.footer img {
+    display: block;
+}
+
+.footer div {
+    margin-top: 20px; /* Ajusta el espacio entre los logos y el texto según tus preferencias */
+}
+
+@media (max-width: 600px) {
+    /* Ajusta el estilo para pantallas más pequeñas si es necesario */
+    .footer {
+    flex-direction: column;
+    align-items: center;
+}
 }

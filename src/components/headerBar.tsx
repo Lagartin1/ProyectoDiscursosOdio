@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import LogoHateAlert from '../img/hateAlert_logo.png';
 import "../styles/headerBar.css";
 
 function HeaderBar() {
@@ -12,7 +13,7 @@ function HeaderBar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                [ HateAlert ]
+                <img src={LogoHateAlert} width="200px" height="40px" alt="logo HateAlert" />
                 </a>
             </h1>
             </div>

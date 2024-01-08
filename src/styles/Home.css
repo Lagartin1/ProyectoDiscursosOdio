@@ -39,3 +39,12 @@
     border-radius: 0.4rem;
     padding: 20px;
 }
+.explanation-box a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.explanation-box a:hover {
+    border-bottom: 1px solid #000;
+}

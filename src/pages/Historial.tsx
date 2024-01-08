@@ -31,7 +31,9 @@ function Historial() {
                         {/* hacer un map para renderizar segun lo entragdo por la api */}
                         <Card url="" fecha='dd-mm-yyyy' porcentaje={60}/>
                         <Card url="" fecha='dd-mm-yyyy' porcentaje={70}/>
-                        <Card url="" fecha='dd-mm-yyyy' porcentaje={25}/>
+                        <Card url="" fecha='dd-mm-yyyy' porcentaje={80}/>
+                        <Card url="" fecha='dd-mm-yyyy' porcentaje={50}/>
+                        <Card url="" fecha='dd-mm-yyyy' porcentaje={10}/>
                 {/* </> }*/}
 
             </section>
