@@ -12,12 +12,12 @@ function SessionCard() {
     const [NuevoUsuario, setNuevoUsuario] = React.useState('');
     const [NuevaPassword, setNuevaPassword] = React.useState('');
     const [isRegistering, setIsRegistering] = React.useState(false); // Nuevo estado para el modo de registro
-    //const [isLoggedIn, setIsLoggedIn] = React.useState(false); // para inicio de session
+    const [isLoggedIn, setIsLoggedIn] = React.useState(false); // para inicio de session
     const [usersMap, setUsersMap] = React.useState(
         new Map([
-            ['hola', '123'],
-            ['chao', '345'],
-            ['colocolo', '567'],
+            ['lcarcamo', '1234'],
+            ['fcordova', '123'],
+            ['colocolo', '33'],
         ])
     );
     const navigate = useNavigate();
@@ -44,10 +44,10 @@ function SessionCard() {
 
         if (validSession) {
             // esto es para que se cambie el valor de iniciar sesion a true
-            //sessionStorage.setItem('isLoggedIn', 'true');
-            //setIsLoggedIn(true); // Actualiza el estado de inicio de sesión
+            sessionStorage.setItem('isLoggedIn', 'true');
+            setIsLoggedIn(true); // Actualiza el estado de inicio de sesión
             
-            navigate('/Home');
+            //navigate('/Home');
             toast({
                 title: 'Inicio de sesión exitoso.',
                 status: 'success',
@@ -65,7 +65,14 @@ function SessionCard() {
     };
 
     const handelClickSing = () => {
-        if (usersMap.has(NuevoUsuario)) {
+        if (NuevoUsuario.trim() === '' || NuevaPassword.trim() === '') {
+            toast({
+                title: 'Error: El usuario o la contraseña no pueden estar vacíos.',
+                status: 'error',
+                duration: 3000,
+                isClosable: true,
+            });
+        } else if (usersMap.has(NuevoUsuario)) {
             toast({
                 title: 'Error: El usuario ya existe.',
                 status: 'error',
@@ -106,8 +113,11 @@ function SessionCard() {
     };
 
     useEffect(() => {
-        console.log(usersMap); // Puedes realizar acciones adicionales después de la actualización del mapa aquí
-    }, [usersMap]);
+        if (isLoggedIn) {
+            navigate('/Home');
+        }
+    }, [isLoggedIn, navigate]);
+    
 
     return (
         <>

@@ -9,7 +9,7 @@ function LogoutCard(){
 
     const handelLogout= () => {
         sessionStorage.removeItem('isLoggedIn');
-        navigate('/Login') // aqui no se porque cuando se cliquea el boton de cerrar sesion no vuelve al login
+        navigate('/Login') 
         toast({
             title: 'Cierre de sesión exitoso.',
             status: 'success',
@@ -22,7 +22,7 @@ function LogoutCard(){
         <div className="logoutcard">
                 <div className="wrapperLogOut">
                     <h1 className='logoutT'>
-                        Ya está en una sesión
+                        Ya está en una sesión.
                     </h1>
                     <button 
                         className='LoB'
